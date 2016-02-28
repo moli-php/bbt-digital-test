@@ -2,14 +2,17 @@
 <html>
 <head>
 	<title><?php echo $title; ?></title>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/simple-form-validation/simple-form-validation.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" />
-<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/simple-form-validation/simple-form-validation.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/simple-form-validation/simple-form-validation.css" />
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/ie10-viewport-bug-workaround.css" />
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/sticky-footer-navbar.css" />
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" />
+	<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/simple-form-validation/simple-form-validation.js"></script>
 </head>
 <body>
+
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
@@ -36,3 +39,4 @@
 		</div>
 	</div>
 </nav>
+<div class="container">

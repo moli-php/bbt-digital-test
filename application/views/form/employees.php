@@ -7,7 +7,8 @@ $company_id = '';
 $button = 'Save';
 $heading_title = 'Add Employee';
 $ajax_url = base_url() . 'api/add';
-if(isset($employee_id)){
+
+if(isset($employee_id) && count($employee)){
 	$first_name = $employee->first_name;
 	$last_name = $employee->last_name;
 	$position = $employee->position;

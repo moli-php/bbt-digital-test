@@ -1,3 +1,14 @@
+</div> <!-- container -->
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">BBT Digital Test 2016, All Rigths Reserved.</p>
+  </div>
+</footer>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="<?php echo base_url(); ?>assets/js/ie10-viewport-bug-workaround.js"></script>
+
  <!-- Modals -->
 <div id="successModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
