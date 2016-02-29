@@ -23,7 +23,7 @@ $(function(){
 	});
 
 	$('#successModal').on('hidden.bs.modal', function () {
-  		window.location = '<?php echo base_url(); ?>company';
+  		$('#company').val("");
 	})
 
 });

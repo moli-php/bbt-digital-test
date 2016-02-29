@@ -46,8 +46,12 @@ $(function(){
 	});
 
 	$('#successModal').on('hidden.bs.modal', function () {
-  		window.location = '<?php echo base_url(); ?>employees';
+  		$('form input:text, #email').val("");
+  		$('form select option:eq(0)').attr('selected',true);
+
 	})
+
+
 
 });
 </script>
