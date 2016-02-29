@@ -14,24 +14,44 @@ class Add extends MY_Controller {
 		$title = $this->uri->segment(2) ? ' | ' . $this->uri->segment(2) : '';
 		$this->data->title = ucfirst($this->data->content) . $title;
 		$this->data->id = $this->uri->segment(2, NULL);
-
 	}
 
 	/*
 	* Compnay form view
 	*/
-	public function company()
+	public function company($param = NULL)
 	{
-		$this->load->view('form', $this->data);
+		if($param){
+			$this->_error_404();
+		}else{
+			$this->load->view('form', $this->data);
+		}
+		
 	}
 
 	/*
 	* Employee form view
 	*/
-	public function employees()
+	public function employees($param = NULL)
 	{
-		$this->data->company = $this->model->getCompany();
-		$this->load->view('form', $this->data);
+		if($param){
+			$this->_error_404();
+		}else{
+			$this->data->company = $this->model->getCompany();
+			$this->load->view('form', $this->data);
+		}
+		
+	}
+
+
+	private function _error_404() {
+		set_status_header(404);
+		$this->data->title = 'Erorr 404';
+		$this->data->heading = '404 Page Not Found';
+		$this->data->message = 'The page you requested was not found.';
+		$this->load->view('header',$this->data);
+		$this->load->view('errors/error_404',$this->data);
+		$this->load->view('footer');
 	}
 
 	
