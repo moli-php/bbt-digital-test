@@ -38,8 +38,6 @@ $(function(){
 			<input type="text" placeholder="Enter company name" class="form-control" id="company" simpleForm-required required-message="Company field is required">
 		</div>
 	</div>
-
-	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-4 control-label">
 			<button type="button" id="btn_save" class="btn btn-primary" type="submit">Save</button>
