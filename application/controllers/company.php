@@ -25,10 +25,5 @@ class Company extends MY_Controller {
 		$this->data->company = $this->model->getCompany($this->data->id);
 		$this->load->view('body',$this->data);
 	}
-
-
-
-
 	
 }
-

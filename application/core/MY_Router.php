@@ -241,7 +241,6 @@ class MY_Router {
 			}
 
 			$this->set_method($segments[1]);
-
 		}
 		else
 		{

@@ -94,7 +94,7 @@ $(function(){
 					<?php foreach($company as $k => $v) { ?>
 
 						<?php if(isset($employee_id)){ ?>
-								<?php if($v->id == $employee_id){ ?>
+								<?php if($v->id == $company_id){ ?>
 									<option selected value="<?php echo $v->id; ?>"><?php echo $v->company; ?></option>
 								<?php }else{ ?>
 									<option value="<?php echo $v->id; ?>"><?php echo $v->company; ?></option>

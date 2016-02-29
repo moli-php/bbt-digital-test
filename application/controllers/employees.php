@@ -18,7 +18,6 @@ class Employees extends MY_Controller {
 
 	}
 
-
 	/*
 	* Display Employees or update employee
 	*/
@@ -34,7 +33,5 @@ class Employees extends MY_Controller {
 		}
 		
 	}
-
 	
 }
-
