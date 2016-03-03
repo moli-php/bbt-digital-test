@@ -267,6 +267,8 @@ class MY_Loader {
 		}
 		
 		$CI =& get_instance();
+		
+		/* comment this condition for the custom route, and redirect to page 404 instead. */
 		// if (isset($CI->$name))
 		// {
 		// 	show_error('The model name you are loading is the name of a resource that is already being used: '.$name);
